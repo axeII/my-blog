@@ -1,0 +1,27 @@
+# config/_default/menus.toml
+
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "whoami"
+  pageRef = "about"
+  weight = 20
+
+[[main]]
+  pre = "github"
+  name = ""
+  url = "https://github.com/axeII"
+  weight = 30
+
+[[main]]
+  identifier = "mastodon"
+  pre = "mastodon"
+  url = "https://infosec.exchange/@axell"
+  weight = 40
+
+# [[footer]]
+#   name = "Privacy"
+#   url = "https://external-link"

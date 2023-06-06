@@ -1,0 +1,11 @@
+title = "My blog"
+
+[author]
+name = "Ales Lerch"
+image = "img/author.jpg"
+headline = "Welcome to my dev notes"
+bio = "A little bit about me"
+links = [
+    { github = "https://github.com/axeII" },
+    { mastodon = "https://infosec.exchange/@axell" }
+]

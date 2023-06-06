@@ -1,0 +1,5 @@
+colorScheme = "blowfish"
+[homepage]
+layout = "hero"
+homepageImage = "background.jpg"
+# colorScheme = "avocado"
