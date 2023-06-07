@@ -1,10 +1,10 @@
-title = "My blog"
+title = "axell.dev"
 
 [author]
 name = "Ales Lerch"
 image = "img/author.jpg"
-headline = "Welcome to my dev notes"
-bio = "A little bit about me"
+headline = "DevOps engineer & Cyber Security ambassador. "
+bio = "I love Italian cuisine, scuba diving and self-hosted stuff ✨."
 links = [
     { github = "https://github.com/axeII" },
     { mastodon = "https://infosec.exchange/@axell" }

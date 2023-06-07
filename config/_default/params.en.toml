@@ -1,5 +1,19 @@
 colorScheme = "blowfish"
+enableSearch = true
+logo = "img/logo.png"
+[header]
+layout = "fixed-fill-blur"
 [homepage]
-layout = "hero"
-homepageImage = "background.jpg"
-# colorScheme = "avocado"
+layout = "background"
+homepageImage = "img/background.jpg"
+colorScheme = "avocado"
+showRecent = true
+showRecentItems = 3
+cardView = true
+# cardViewScreenWidth = true
+[article]
+showHero = true
+heroStyle = "basic"
+[list]
+showSummary = true
+showTableOfContents = true
