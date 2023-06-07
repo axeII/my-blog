@@ -2,4 +2,4 @@ baseURL = 'akira-dev.io'
 languageCode = 'en-us'
 title = 'my blog'
 enableRobotsTXT = true
-defaultBackgroundImage = "background.jpg"
+# defaultBackgroundImage = "background.jpg"
