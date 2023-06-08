@@ -1,5 +1,11 @@
-baseURL = 'akira-dev.io'
+baseURL = 'axell.dev'
 languageCode = 'en-us'
 title = 'my blog'
 enableRobotsTXT = true
-# defaultBackgroundImage = "background.jpg"
+summaryLength = 10
+defaultBackgroundImage = "img/background.jpg"
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
