@@ -20,8 +20,8 @@ showMoreLink = true
 # cardViewScreenWidth = true
 [article]
 showHero = true
-# heroStyle = "thumbAndBackground" # this on is nice but play with it
-heroStyle = "big"
+heroStyle = "background" # this on is nice but play with it
+# heroStyle = "big"
 showBreadcrumbs = true
 showTableOfContents = true
 showRelatedContent = true
