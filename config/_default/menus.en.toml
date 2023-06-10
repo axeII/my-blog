@@ -1,4 +1,8 @@
 # config/_default/menus.toml
+# [[main]]
+#   name = "/home"
+#   pageRef = "/"
+#   weight = 10
 
 [[main]]
   name = "Posts"
@@ -6,22 +10,28 @@
   weight = 10
 
 [[main]]
-  name = "whoami"
+  name = "Whoami"
   pageRef = "about"
   weight = 20
 
 [[main]]
-  pre = "github"
-  name = ""
-  url = "https://github.com/axeII"
+  name = "Tags"
+  pageRef = "tags"
   weight = 30
 
-[[main]]
-  identifier = "mastodon"
-  pre = "mastodon"
-  url = "https://infosec.exchange/@axell"
-  weight = 40
+# [[main]]
+#   pre = "github"
+#   name = ""
+#   url = "https://github.com/axeII"
+#   weight = 30
+
+# [[main]]
+#   identifier = "mastodon"
+#   pre = "mastodon"
+#   url = "https://infosec.exchange/@axell"
+#   weight = 40
 
 # [[footer]]
-#   name = "Privacy"
-#   url = "https://external-link"
+#   showAppearanceSwitcher = true
+#   # name = "Privacy"
+  # url = "https://external-link"

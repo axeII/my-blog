@@ -1,19 +1,41 @@
 colorScheme = "blowfish"
 enableSearch = true
-logo = "img/logo.png"
+showRelatedContent = true
+relatedContentLimit = 3
+defaultBackgroundImage = "img/ocean.jpg"
+# logo = "img/logo.png"
+mainSections = ['favorite']
 [header]
-layout = "fixed-fill-blur"
+layout = "fixed"
+# layout = "fixed-fill"
 [homepage]
-layout = "background"
-homepageImage = "img/background.jpg"
+layout = "custom"
+# layout = "background"
+# homepageImage = "img/background.jpg"
 colorScheme = "avocado"
 showRecent = true
-showRecentItems = 3
+showRecentItems = 6
 cardView = true
+showMoreLink = true
 # cardViewScreenWidth = true
 [article]
 showHero = true
-heroStyle = "basic"
-[list]
-showSummary = true
+# heroStyle = "thumbAndBackground" # this on is nice but play with it
+heroStyle = "big"
+showBreadcrumbs = true
 showTableOfContents = true
+showRelatedContent = true
+relatedContentLimit = 3
+showComments = true
+showTaxonomies = true
+[list]
+# showSummary = true
+showBreadcrumbs = true
+showHero = true
+heroStyle = "background"
+showTableOfContents = true
+# cardViewScreenWidth = true
+# showCards = true
+groupByYear = true
+[footer]
+showAppearanceSwitcher = true
