@@ -34,10 +34,16 @@ Please think about it. It's possible that in the end, you don't really need VPN 
 
 On the other hand, most of us do need VPN to access our workspace (thanks to COVID these days) which is absolutely correct. This is a use case where using VPN is not just ok but also needed.
 
----
+<!-- --- -->
+
+{{< alert >}}
+**Warning!** Please double check if you really need VPN.
+{{< /alert >}}
 
 Anyway back to my previous question. Why should one use VPN unless it is due to work?  Without spending hours and hours to discuss if yes or not, here is a very good gist page with FAQ for this specific topic. I do recommend to through with it since it was helpful for me.
-<!-- https://gist.github.com/joepie91/5a9909939e6ce7d09e29 -->
+
+<!-- {{< github repo="https://gist.github.com/joepie91/5a9909939e6ce7d09e29" >}} -->
+> [https://gist.github.com/joepie91/5a9909939e6ce7d09e29](https://gist.github.com/joepie91/5a9909939e6ce7d09e29)
 
 
 ## Solution: Algo personal VPN in the cloud
@@ -51,7 +57,7 @@ Anyway, let's set up our own VPN service. When I was looking for custom solution
 
 Algo is written in python and it's available on Github (link below).
 
-<!-- https://github.com/trailofbits/algo -->
+{{< github repo="trailofbits/algo" >}}
 
 You need only a few things to run this service:
 
@@ -100,7 +106,7 @@ Since we have the environment ready now we need to finally deploy algo. There ar
 
 Thankfully, there is a different way to deploy algo, and that is called Ansible. This tool, created by RedHat, is very helpful in the world of automation and deployment.
 
-<!-- https://www.ansible.com/overview/how-ansible-works -->
+> [how ansible works](https://www.ansible.com/overview/how-ansible-works)
 
 We need to install `ansible-playbook` tool for Ansible. Use your package manager for your OS. It shouldn't be a problem to install this. Before finally deploying to the cloud we can still use one more thing which can help us to make this deployment easier and that is a configuration for Ansible.
 
@@ -126,7 +132,7 @@ ansible-playbook main.yml -e "provider=gce
 
 When you use Ansible this way there is no need for any interaction. Unlike normally where you have to enter different variables during deployment. From now installation should either fail or be successful.
 
-##3.Configuring devices
+## 3.Configuring devices
 
 Since our deployment was successful and we have running algo on GCP all we need now is to connect this service via a secure network tunnel. How? During installation and after deployment there were several files generated. You can find them under directory `deployment` and here you can file that is named like `your-deployed-sercice.ovpn`. This you can share between your device, eg: iOS, macOS. Installing profiles on your devices shouldn't be a problem, just be sure that the profile file is supported by your device. I also recommend using encrypted services like `scp` ideally at your home trusted environment or even better share them directly using tools like `airdrop`.
 
