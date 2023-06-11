@@ -9,10 +9,5 @@ defaultBackgroundImage = "img/background.jpg"
   category = "categories"
   author = "authors"
   series = "series"
-# [outputFormats.SearchIndex]
-# mediaType = "application/json"
-# baseName = "searchindex"
-# isPlainText = true
-# notAlternative = true
 [outputs]
 home = ["HTML", "RSS", "JSON"]
