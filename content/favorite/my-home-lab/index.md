@@ -42,8 +42,7 @@ Yes is that this processor has enough processing power that I had no problem run
 
 No is that AMD's graphic processors do have still some issues on Linux. So here you can Intel or Nvidia better choice. It's not perfect yet but I am sure AMD will issue these problems in near future. Another problem was with fan. There was firmware issue with fan that he was running either 0% or 100% of power. It was so annoying that this machine was for serveral second quiet and suddenly fan was running full power. Luckily company made a patch a BIOS update. And after this update everything was fine. I recommend to anyone be carefull with what you choose because it can be a board without future support with broken firmware can be useless.  Luckily for me thing went fine.
 
-![UDM Pro and server](images/image01.jpg)
-<!-- <span class="img-caption" id="{{ $id }}">{{ $caption }}</span> -->
+![UDM Pro and server](images/image01.jpg "UDM Pro and server")
 
 Bolt as a single server machine was fine choice I think after a 1 of usage. But today I would go probably rather with server HW that would support IPMI or iLO or any similar technology.
 
@@ -69,23 +68,23 @@ In my opinion, most NAS solution these days sucks. They have complicated UI. But
 
 This way I can have a software-controlled raid (which is better than hardware controlled one).  Raid is a great thing but remember it's not a backup!
 
-{{< figure src="__GHOST_URL__/content/images/2021/07/IMG_43DDFC241A9D-1.jpeg" caption="QNAP DAS" >}}
+![QNAP DAS](images/image02.jpg "QNAP DAS")
 
 ## Issue 3: Network
 
 You need a network e.g. WIFI router to connect to the Internet for your server and for your home network. And that's it.
 
-{{< figure src="__GHOST_URL__/content/images/2021/07/rack1.webp" caption="Work in progress" >}}
+![Work in progress](images/image03.jpg "Work in progress")
 
 _However_, you can go fancy like me and go with UDMP (Unifi dream machine pro). It is a network tool that is a switch, router, security gateway, and cloud key in one machine. Cool right!
 
-{{< figure src="__GHOST_URL__/content/images/2021/07/finished-rack.webp" caption="Finally work is done." >}}
+![work done](images/image04.png "Finally work is done.")
 
 There are _soo_ many things you can do with this machine! For me using this machine was such a great boost. I can set up VLANs networks, I can control bandwidth for every AP, I can set up firewall rules, I can use DPI to control what network users are doing, I can block p2p, I can setup IPS to control security, I can set up honeypot in case someone does something funny.
 
 There is so much I can do with this machine and it's not that expensive for what it does. Give it try. I thought this was a perfect machine until something bad happened.
 
-{{< figure src="__GHOST_URL__/content/images/2021/07/unifi-1.webp" caption="Thanks to DPI one can easily manage the network." >}}
+![netowrk udmp](images/image05.jpg "Thanks to DPI one can easily manage the network.")
 
 In December 2020, company Ubiquiti was compromised thanks to one employee that who didn't set up 2FA for his AWS s3 cloud account. The whole s3 bucket, which allegedly contained all privates keys and more secure sensitive linked to every running UDM pro in the world, was _compromised_.
 
@@ -97,6 +96,6 @@ EDIT: 2021 DecemberThe culprit behind this leak was caught. And to my surprise, 
 
 I was not satisfied with the setup how it is. So I decided to upgrade my gear. It never ends! The main reason for this upgrade was that my network infrastructure was getting bigger. I had to add more AP for better signal distribution. Unfortunately, I've run out of ethernet slots on my UDM Pro so I had to add a new switch to my home lab setup. I decide to add Switch 16 PoE (https://store.ui.com/collections/unifi-network-switching/products/usw-16-poe). This switch has 8 ports supporting 802.3at PoE+ standard that I needed to power supply my new 6 APs. Thanks to this I was able to save space on power supply sockets. Also, I made more space in my rack since I could remove Unifi Poe adapters that were suppling previously power to my APs.
 
-{{< figure src="__GHOST_URL__/content/images/2022/01/IMG_2911.jpeg" caption="New fresh look" >}}
+![fresh look](images/image06.jpg "New fresh look")
 
 Now about APs. As mentioned before, they support the new WIFI standard called "WIFI 6". However, don't mistake these with ones supporting 6Ghz. These AP's don't support this bandwidth, unfortunately. However, antennas in these AP are much more powerful. They have more transmit power. Data throughput is much higher than in previous generations. The Access Point WiFi 6 Long-Range has over 5 GHz band 2.4 Gbps through (4x4 MU-MIMO and OFDMA). And Access Point WiFi 6 Lite _only_ 1.2 Gbps (2x2 MU-MIMO and OFDMA). So both are more than enough for my network that supports a maximum speed 1Gbps. I plan a 10Gbps upgrade in the future. But right now 1Gbps is enough speed for my network. Also, the price for 10G switches is really high. And even if would have a 10Gbps switch I would still need next-generation APs that support such a speed. The WiFi 6E standard will finally support the 6Ghz band. First Access Points are coming out in 2022.
