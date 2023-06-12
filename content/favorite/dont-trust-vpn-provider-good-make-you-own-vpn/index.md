@@ -100,7 +100,7 @@ gcloud services enable compute.googleapis.com
 
 This should create a config file called `configs/gce.json` which is needed for algo deployment. We need this for the next part.
 
-## 2.Deploy
+### 2.Deploy
 
 Since we have the environment ready now we need to finally deploy algo. There are two ways how to install or deploy algo on GCP. One option is to follow the classic way which is `pip install requiremetns.txt` and `./algo`. But this option might more difficult than it looks. For example, in my case, I had a problem with installation this way.
 
@@ -132,10 +132,10 @@ ansible-playbook main.yml -e "provider=gce
 
 When you use Ansible this way there is no need for any interaction. Unlike normally where you have to enter different variables during deployment. From now installation should either fail or be successful.
 
-## 3.Configuring devices
+### 3.Configuring devices
 
 Since our deployment was successful and we have running algo on GCP all we need now is to connect this service via a secure network tunnel. How? During installation and after deployment there were several files generated. You can find them under directory `deployment` and here you can file that is named like `your-deployed-sercice.ovpn`. This you can share between your device, eg: iOS, macOS. Installing profiles on your devices shouldn't be a problem, just be sure that the profile file is supported by your device. I also recommend using encrypted services like `scp` ideally at your home trusted environment or even better share them directly using tools like `airdrop`.
 
-# Final thoughts
+## Final thoughts
 
-_Yup,_ so that's it! Pretty easy and simple. No logs are stored by default! You know the machine you are connecting to (also the region of a host which is set during deployment). A very simple, secure, and powerful tool you have now under control. Take care ✌?.
+_Yup,_ so that's it! Pretty easy and simple. No logs are stored by default! You know the machine you are connecting to (also the region of a host which is set during deployment). A very simple, secure, and powerful tool you have now under control.✌

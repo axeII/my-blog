@@ -22,8 +22,7 @@ And at that moment it was clear for me. I am in a country that blocks VPN. Wow. 
 
 _Damn._ Suddenly I was the victim of censorship. No free Internet. No movies, shows, or _porn_ (UAE's specialty).
 
-{{< figure src="__GHOST_URL__/content/images/2019/10/iu.jpeg" >}}
-
+![meme](images/image01.jpg)
 
 
 Normally I would use SSH to connect home and I would just open or forward some ports. Hell, I could even try to create a SOCKS5 proxy tunnel to get through that damn firewall. But no. I forgot to save the public key ssh key of my shell in `allowed_hosts`.
@@ -79,7 +78,7 @@ You need to fill access key. That's `ss://` URL. Filling the address might be tr
 
 After you try to connect to Outline it asks you for permission to install a new VPN profile on your device. For iPad, it works like a VPN you can see the VPN logo in the top menu bar when you are connected. And at that moment I eagerly opened the browser and tried _pornhub.com_ (UAE blocks all porn sites) and I had finally **free** Internet.
 
-{{< figure src="__GHOST_URL__/content/images/2019/10/iu.png" >}}
+![meme2](images/image02.png)
 
 ## End
 
