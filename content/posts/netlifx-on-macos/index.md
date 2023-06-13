@@ -23,7 +23,7 @@ In case you never heard before about `nativefier` is a command-line tool to _eas
 There is not _that_ much needed:- nativefier (Can be installed via homebrew) - python3 (To sign the app) - Netflix icon (Credit and link for the gorgeos icon. Source: [octaviotti](https://www.deviantart.com/octaviotti/art/Netflix-for-macOS-718469466))
 
 ![Netflix icon I found](images/icon.png)
-<!-- <img src="images/icon.png" alt="Netflix icon I found" width="200"/> -->
+<!-- {{< figure src="images/icon.png" alt="" caption="Netlifx icon" height=20 >}} -->
 
 ## Building the netflix app
 

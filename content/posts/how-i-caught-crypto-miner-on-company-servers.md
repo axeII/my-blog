@@ -7,16 +7,16 @@ title: "How I caught crypto miner on company servers"
 ---
 
 
-Long story short one evening I was doing maintenance on one VM. I was supposed to check if there is not running anything important. And if not my instructions were to remove VM so we could use GPU on other VM.
+Long story short, one afternoon I was performing maintenance on a Virtual machine. My task was to check if there were any important processes running. This particular VM had an NVIDIA GPU initialized, and we wanted to transfer this GPU to another VM.
 
-When I was about to hit `poweroff` command and exit command line I used a tool called `htop`. Very simple a powerful tool for checking active processes and their mem, CPU usage. I did not see anything strange at first. However right when I was about stop monitoring VM, I saw a very strange process:
+As I was about to power off the machine, but I found myself in the middle of a discussion with my colleague. While I had been monitoring the VM prior to shutting it down, suddenly, in the middle of our conversation, my colleague noticed a specific process which should not have been there. _"Hey, what's that?"_ asked. At first, I didn't notice anything unusual. So I opened another bigger window and tried to find this process again. Found it and we knew it's bad.
 
 ```bash
 ./validator -P stratum1+tcp://0xf47A58ad640ecAEA78D89C5eA8E5f7C51IJCe.laptop@eu1.ethermine.org:4444 &>/dev/null
 #&>/dev/null
 ```
 
-My command screen was too narrow so at first, I saw just the first 15 characters of this long process name. To be clear the word "validator" seemed normal since it's our custom tool for running machine learning. I thought _hey this is strange,_ that this command is rather too long. And when I made my terminal screen bigger and saw the whole process name - I knew what's going _on_.
+The word "validator" seemed normal since it's our custom tool our ML developers were using. But it was obvoise that the rest the command was malitious. And when I made my terminal screen bigger and saw the whole process name - I knew what's going _on_.
 
 After I've reported this to my boss, I was told to inspect if it was inside or if we have been hacked then kill it and nuke the whole VM and report back. So the case had begun.
 
