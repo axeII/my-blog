@@ -1,0 +1,37 @@
+---
+version: "3"
+
+# vars:
+  # VAR: ""
+
+# dotenv: [".config.env"]
+
+# env:
+
+# includes:
+#   ansible: .taskfiles/file.yml
+
+tasks:
+
+  init:
+    desc: Initialize workstation dependencies with Brew
+    cmds:
+      - brew install {{.DEPS}} {{.CLI_ARGS}}
+    preconditions:
+      - sh: command -v brew
+        msg: |
+          Homebrew is not installed.
+    vars:
+      DEPS: >-
+        go
+        hugo
+
+  build:
+    desc: Build project
+    cmds:
+      - hugo
+
+  dev:
+    desc: Setup develop environment
+    cmds:
+      - hugo server -D -t blowfish
