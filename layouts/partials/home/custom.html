@@ -57,8 +57,7 @@
   {{ $showMoreLinkDest := "/posts" }}
   <!-- <h2 class="mt-8 text-2xl font-extrabold mb-10">{{ i18n "shortcode.recent_articles" | emojify }}</h2> -->
   <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {{ range first $recentArticles (.Paginate (where .Site.RegularPages "Type" "in"
-    .Site.Params.mainSections)).Pages }}
+    {{ range first $recentArticles (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
     {{ partial "article-link/card.html" . }}
     {{ end }}
   </section>
