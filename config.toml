@@ -1,4 +1,4 @@
-baseURL = 'axell.dev'
+baseURL = 'https://axell.dev/'
 languageCode = 'en-us'
 title = 'my blog'
 enableRobotsTXT = true
