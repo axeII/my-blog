@@ -29,7 +29,8 @@ tasks:
   build:
     desc: Build project
     cmds:
-      - hugo
+      - rm -rf public
+      - hugo -t blowfish
 
   dev:
     desc: Setup develop environment
