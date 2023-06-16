@@ -4,10 +4,12 @@ showRelatedContent = true
 relatedContentLimit = 3
 defaultBackgroundImage = "img/ocean.jpg"
 # logo = "img/logo.png"
+highlightCurrentMenuArea = true
+smartTOC = true
 mainSections = ['favorite']
 [header]
-layout = "fixed"
-# layout = "fixed-fill"
+# layout = "fixed"
+layout = "fixed-fill-blur"
 [homepage]
 layout = "custom"
 # layout = "background"
