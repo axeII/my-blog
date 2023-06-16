@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2023-05-21T00:03:23+02:00
-draft: true
+draft: false
 ---
 
 I started my journey at kiwi.com as an intern. I worked as part of the platform team that managed GitLab and CI/CD for the entire organization. We worked close with security and DevOps teams. I had to take a break to finish my master degree in IT (and Economics). After graduation I started as backend python engineer, but after some time I returned to DevOps since I find it to enjoy it more. I am also fan of security.
