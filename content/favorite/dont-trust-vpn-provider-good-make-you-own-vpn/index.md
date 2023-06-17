@@ -24,7 +24,7 @@ And here goes the ansfer. Don't trust VPN providers be your own VPN provider. Ye
 
 But first.
 
-## Do I need a VPN?
+## Do I need to use a VPN?
 
 Before we go through making our own VPN, I would like to discuss this question. It's very _important_ and you should ask yourself.
 
@@ -34,16 +34,11 @@ Please think about it. It's possible that in the end, you don't really need VPN 
 
 On the other hand, most of us do need VPN to access our workspace (thanks to COVID these days) which is absolutely correct. This is a use case where using VPN is not just ok but also needed.
 
-<!-- --- -->
-
 {{< alert >}}
-**Warning!** Please double check if you really need VPN.
+**Note:** I strongly recommend to read [this](https://gist.github.com/joepie91/5a9909939e6ce7d09e29) guide about VPN.
 {{< /alert >}}
 
 Anyway back to my previous question. Why should one use VPN unless it is due to work?  Without spending hours and hours to discuss if yes or not, here is a very good gist page with FAQ for this specific topic. I do recommend to through with it since it was helpful for me.
-
-<!-- {{< github repo="https://gist.github.com/joepie91/5a9909939e6ce7d09e29" >}} -->
-> [https://gist.github.com/joepie91/5a9909939e6ce7d09e29](https://gist.github.com/joepie91/5a9909939e6ce7d09e29)
 
 
 ## Solution: Algo personal VPN in the cloud
