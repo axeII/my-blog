@@ -34,6 +34,11 @@ First, you need to decide which service  would you like to use. The famouse are:
 
 I went with the `bind`. I'll might try one of these later and measure speed difference in the future.
 
+
+## Theory
+
+There are two main choice how to do this. One is iterative and second is recursive. These two methods are used for resolving domain names into IP addresses. Iterative DNS involves a step-by-step process where a DNS resolver, such as a client's computer or a DNS server, queries other DNS servers for the complete resolution of a domain name. In this approach, the DNS resolver receives partial information from each server and continues to make subsequent requests until it obtains the final IP address. On the other hand, recursive DNS takes a more automated approach. When a DNS resolver receives a query for a domain name, it directly contacts other DNS servers and handles all the subsequent requests and responses itself until it obtains the final IP address. [Recursive](https://www.slashroot.in/difference-between-iterative-and-recursive-dns-query) DNS simplifies the process for the DNS resolver, as it doesn't have to manage multiple requests and responses manually.
+
 ## Installation
 
 Now for the installation. The first step is to install package `bind9`.
@@ -108,7 +113,8 @@ And after you set on your machine DNS resolver Linux machine you can happily use
 
 BUT.
 
-{{< figure src="__GHOST_URL__/content/images/2020/10/The-slow-service.jpg" >}}
+![meme1](images/image01.jpg)
+
 
 Yeah, your home DNS is slow (OMG!).
 
@@ -116,7 +122,9 @@ I did some testing and tool `dig` was giving me almost **1023 ms** speed for que
 
 <blockquote> <cite>When you're having your DNS server act as a resolver and force it to do all its recursion on its own, you'll likely always have higher latency in comparison to a large DNS provider like OpenDNS or Google. They likely have their servers hosted on better links with lower latency, so when those servers need to do a full recursive query it'll likely be faster than your server can do it.</cite></blockquote>
 
-Ok, we should try to fix that. Speed up the whole DNS or whole goddamn thing is for _nothing_. What we need to do now is to speed things a bit up by setting forwarding. Here is what I mean:
+Ok, we should try to fix that. Speed up the whole DNS or whole goddamn thing is for _nothing_. What we need to do now is to speed things little bit by setting up [forwarding](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-caching-or-forwarding-dns-server-on-ubuntu-14-04)
+
+. Here is what I mean:
 
 <blockquote><cite> A forwarding DNS server offers the same advantage of maintaining a cache to improve DNS resolution times for clients. However, it actually does none of the recursive querying itself. Instead, it forwards all requests to an outside resolving server and then caches the results to use for later queries.</cite> </blockquote>
 
@@ -160,22 +168,10 @@ Oh yeah well it's _slower_ but we should have much better speed if we repeat the
 ;; MSG SIZE  rcvd: 91
 ```
 
-{{< figure src="__GHOST_URL__/content/images/2020/10/when-your-dns.jpg" >}}
+![meme2](images/image02.jpg)
 
 Oh well.  Results are that it's 39ms without bind and 53ms with it.  Seems like your home server which could be rasberry pi is not better than multi milion dollar datacenter (shoking I know) but still it was fun to play with these tools.
 
 ## Final thoughts
 
 This fun eventhough I can't think of this huge success. My home server was still slower in the end that public provider like Google or Cloudflare.  Honestly I was dissapointed with the results but in the end I learned something new.
-
----
-
-Sources:
-
-[https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-caching-or-forwarding-dns-server-on-ubuntu-14-04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-caching-or-forwarding-dns-server-on-ubuntu-14-04)
-
-[https://www.pks.mpg.de/~mueller/docs/suse10.1/suselinux-manual_en/manual/sec.dns.named.html](https://www.pks.mpg.de/~mueller/docs/suse10.1/suselinux-manual_en/manual/sec.dns.named.html)
-
-[https://www.slashroot.in/difference-between-iterative-and-recursive-dns-query](https://www.slashroot.in/difference-between-iterative-and-recursive-dns-query)
-
-[https://www.linuxbabe.com/debian/dns-resolver-debian-10-buster-bind9](https://www.linuxbabe.com/debian/dns-resolver-debian-10-buster-bind9)
