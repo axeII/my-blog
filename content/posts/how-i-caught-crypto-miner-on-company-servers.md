@@ -11,7 +11,7 @@ Long story short, one afternoon I was performing maintenance on a Virtual machin
 
 As I was about to power off the machine, but I found myself in the middle of a discussion with my colleague. While I had been monitoring the VM prior to shutting it down, suddenly, in the middle of our conversation, my colleague noticed a specific process which should not have been there. _"Hey, what's that?"_ asked. At first, I didn't notice anything unusual. So I opened another bigger window and tried to find this process again. Found it and we knew it's bad.
 
-```bash
+```
 ./validator -P stratum1+tcp://0xf47A58ad640ecAEA78D89C5eA8E5f7C51IJCe.laptop@eu1.ethermine.org:4444 &>/dev/null
 #&>/dev/null
 ```
@@ -26,7 +26,7 @@ _Dammit_.
 
 OK, that sucks what to do next? I used the find command for a file named "validator" since there shouldn't be that many files with the same name. I was right. I had found 7 files with the same name in different directories. However, one directory felt strange and it was /etc/test/validator. Hmm, strange. Let's check it out. Quick `cd` and I found this:
 
-```shell
+```
 base) root@core:/etc/test# ll
 total 8164
 drwxr-xr-x   2 root root    4096 Oct  1 20:20 ./
@@ -46,7 +46,7 @@ So far so good found the file, the culprit, killed the process. It's nothing dan
 
 OK. Added to report. _Is that all?_ I asked myself. I did some digging on `validator` file which was just crypto mining tool:
 
-```bash
+```
 ethminer 0.19.0-17+commit.ce52c740
 Build: linux/release/gnu
 ```
