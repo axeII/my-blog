@@ -1,11 +1,10 @@
-+++
-date = 2022-12-08T18:38:21Z
-description = ""
-draft = false
-slug = "using-docker-to-compress-and-extract-volume-backup"
-title = "Using docker to compress and extract volume backup"
-
-+++
+---
+date: 2022-12-08T18:38:21Z
+description: ""
+draft: false
+slug: "using-docker-to-compress-and-extract-volume-backup"
+title: "Using docker to compress and extract volume backup"
+---
 
 
 ## The problem
@@ -26,7 +25,7 @@ Now we need those data inside container `/src/models/data` and since we are lazy
 
 First we can create local docker context:
 
-```bash
+```
 docker context create machine01 --docker "host=tcp://192.168.28.100:2375"
 ```
 
@@ -42,7 +41,7 @@ docker volume ls
 
 Now we can access to containers, volumes on the remote host via docker api. All we need now is to smuggle data from volume to our local machine. Here is the script I created to solve this problem:
 
-<script src="https://gist.github.com/axeII/ed27647ce7e5778f1255340d260c555b.js"></script>
+{{< gist axeII ed27647ce7e5778f1255340d260c555b >}}
 
 Is does that lists volumes. Using tool [fzf](https://github.com/junegunn/fzf) (a great tool I strongly recommend to use) have the ability to scroll these listed volume. After you choose volume it's mounted inside `busybox` container. Script is going to compress whole directory and at last download it via STDOUT to your local directory.
 
@@ -54,7 +53,7 @@ Using the gzip format file size was `420MB` instead of `500MB`:
 
 And the time was:
 
-```bash
+```
 time bash backup-docker-volume.sh
 tar: removing leading '/' from member names
 
@@ -70,7 +69,7 @@ Using the `zstd` compression, the file size was `470MB` instead of `500MB`:
 
 And the time was:
 
-```bash
+```
 tar: Removing leading `/' from member names
 
 ________________________________________________________
