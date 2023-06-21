@@ -1,24 +1,21 @@
-+++
-categories = ["Software devlopment"]
-date = 2021-01-21T01:43:00Z
-description = ""
-draft = false
-slug = "git-fixup"
-tags = ["Software devlopment"]
-title = "Git: How to fixup small mistake (autosquash)"
-
-+++
+---
+# categories: ["Software devlopment"]
+date: 2021-01-21T01:43:00Z
+description: ""
+draft: false
+slug: "how-to-fix-small-git-mistake-using-autosquash"
+tags: ["Software devlopment"]
+title: "Git: How to fixup small mistake (autosquash)"
+---
 
 
 It happens to all of us. You are working on project. Boss calls you that there is a bug. You try to debug this problem. You fix it and push it to git. After more commits you relase that one specific commit contains one very stupid mistake. One line has breakpoint inside the code which now breaks code. _Don't ask why I am so specific_.
 
 Now one option is to push another commit which will remove this line. But this will be saved in commit history. And you might be _embarrassed_ with this.
 
-Now luckily there is a much more elegant option how to fix. This one is called _fixup_ (convenient name). Fixup is very simple feature to rewrite _history._
+There is however a much more elegant option how to fix. This one is called _fixup_ (convenient name). Fixup is very simple feature to rewrite _history. Here is a simple example that will tell you all.
 
-Now no more talk. Simple example example will tell you all.
-
-### 1.Example
+## Example
 
 Lets say we have project:
 
@@ -28,7 +25,7 @@ Lets say we have project:
 effba84 2021-01-19 Ales Lerch Some commit
 
 ⛵ default in example on  master
-▽  
+▽
 ```
 
 Simple project that contains three commits: initial, commit that contains bug we need to change and another commit. What we need is to create small change in commit `9cae9d6`. What you do is make that fix and create new commit.
@@ -74,4 +71,6 @@ ac7ee17 2021-01-19 Ales Lerch (HEAD -> master) Another commit
 effba84 2021-01-19 Ales Lerch Init commit
 ```
 
-One less rubish commit help to maintain clean git history. Helps you or any other member of your team.
+
+## Finally
+One less rubish commit help to maintain clean git history.
