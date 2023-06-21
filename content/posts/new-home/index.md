@@ -1,19 +1,20 @@
-+++
-categories = ["devops", "sys admin", "tech"]
-date = 2019-07-12T01:59:10Z
-description = ""
-draft = false
-image = "__GHOST_URL__/content/images/2019/07/23460076133_6ddf426916_k.jpg"
-slug = "new-home"
-tags = ["devops", "sys admin", "tech"]
-title = "New digs!"
-
-+++
+---
+# categories: ["devops", "sys admin", "tech"]
+date: 2019-07-12T01:59:10Z
+description: ""
+draft: false
+# image: "__GHOST_URL__/content/images/2019/07/23460076133_6ddf426916_k.jpg"
+slug: "new-home"
+series: ["homing"]
+series_order: 1
+tags: ["devops", "sys admin", "tech"]
+title: "New digs!"
+---
 
 
 After short few months short break, I finally found time to fix my blog. Last host - azure was not THAT bad. I decided to change and try new technology.
 
-{{< figure src="__GHOST_URL__/content/images/2019/07/GCP1-1.png" caption="Yep it's Google GCP" >}}
+<!-- {{< figure src="__GHOST_URL__/content/images/2019/07/GCP1-1.png" caption="Yep it's Google GCP" >}} -->
 
 And that's how I end up with Google GCP. Google might have some bad history with privacy but their cloud service is good enough for me to use. And for blogging. When I look back a bit, then it's definitely huge step from hosting blog from my home pi. Not that my blog would have that much bandwidth to need cloud for my hosting but I have done this for one main purpose.
 
