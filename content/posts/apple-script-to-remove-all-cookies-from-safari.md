@@ -1,16 +1,19 @@
-+++
-categories = ["multimedia", "Software devlopment"]
-date = 2020-12-06T01:00:15Z
-description = ""
-draft = false
-slug = "apple-script-to-remove-all-cookies-from-safari"
-tags = ["multimedia", "Software devlopment"]
-title = "Apple script to remove all cookies from safari"
+---
+# categories: ["multimedia", "Software devlopment"]
+date: 2020-12-06T01:00:15Z
+description: ""
+draft: false
+slug: "apple-script-to-remove-all-cookies-from-safari"
+tags: ["multimedia", "Software devlopment"]
+title: "Apple script to remove all cookies from safari"
+---
 
-+++
+In the vast landscape of the internet, cookies hold a hidden power: they can track and identify users, raising concerns about privacy. Deleting cookies periodically is important for taking control over your online identity and protecting personal information. Let's take a look how to delete cookies from your browser which can give back your privacy.
 
 
-Just copy and paste this into  Script Editor.app. Then save this as application. Named it e.g: `CleanCookies.app`. Move this app to `~/Application` or `/Applications`. And all you need is to call from Spotlight aaaand you are done. Enjoy you web browser from tracking cookies.
+## The script
+
+Here is short apple script for deleting cookies. Just copy and paste this into `Script Editor.app`. Then save this as application. Named it e.g: `CleanCookies.app`. Move this app to `~/Application` or `/Applications`. After that all you need is to call this app from Spotlight. From there you can enjoy yoru web browser from tracking cookies.
 
 ```AppleScript
 tell application "Safari"
@@ -39,6 +42,6 @@ tell application "Safari"
 end tell
 ```
 
-_Important note:_
-
-for directory `/Applications` you need admin rights  thanks to SIP. This can be done **only** via gui.
+{{< alert >}}
+**Important**: For directory `/Applications` you need admin rights  thanks to SIP. This can be done **only** via gui.
+{{< /alert >}}
