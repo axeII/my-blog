@@ -1,5 +1,5 @@
 ---
-categories: ["Software devlopment", "tech", "multimedia"]
+# categories: ["Software devlopment", "tech", "multimedia"]
 date: 2021-06-24T22:10:10Z
 description: ""
 draft: false
@@ -8,21 +8,26 @@ tags: ["Software devlopment", "tech", "multimedia"]
 title: "Netflix on macOS"
 ---
 
-Recently I had the privilege to try Netflix (I know it's 2021 but I used plex and jellyfin for that) and I was surprised that there is no _native_ app for the mac.
+Recently I decided to try Netflix. Before Netflix I was pirating movies and tv shows everyday (I still do today) but I though let's give it chance. Firt thing I noticed and I was very surprised that **native** app for the mac doesn't exist.
 
-My other surprise was that I could not find any simple tutorial how to setup Netflix using `nativefier`. So I decided to create this post and hopefully this one will save you some time.
+I try to google how to fix this problem as always and found a tool that can help.
 
-## Wait what nativefier?
+## Nativefier
 
-In case you never heard before about `nativefier` is a command-line tool to _easily_ create a desktop app for any web site with minimal configuration. Basically ala electron app but not in brower but in app. For netflix it's much for me easier to have it in sepearate app than brower. _Anyway_.
+In case you never heard before about `nativefier`. It is a command-line tool to easily create a desktop app for any web site with minimal configuration. Basically ala electron app but not in brower but in app. For netflix it's much for me easier to have it in sepearate app than browser.
 
 {{< github repo="nativefier/nativefier" >}}
 
+My other surprise was that I could not find any simple tutorial how to setup Netflix using `nativefier`. So I decided to create this post and hopefully this one will save you some time.
+
 ## What do you need?
 
-There is not _that_ much needed:- nativefier (Can be installed via homebrew) - python3 (To sign the app) - Netflix icon (Credit and link for the gorgeos icon. Source: [octaviotti](https://www.deviantart.com/octaviotti/art/Netflix-for-macOS-718469466))
+There is not that much needed:
+- nativefier (Can be installed via homebrew)
+- python3 (To sign the app)
+- Netflix icon (Credit and link for the gorgeos icon.
 
-![Netflix icon I found](images/icon.png)
+![Netflix icon I found](images/icon.png "Source: [octaviotti](https://www.deviantart.com/octaviotti/art/Netflix-for-macOS-718469466)")
 <!-- {{< figure src="images/icon.png" alt="" caption="Netlifx icon" height=20 >}} -->
 
 ## Building the netflix app
