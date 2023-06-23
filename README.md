@@ -1,2 +1,2 @@
 # my-blog
-My blog hosted on github
+My blog on github, hosted on cloudflare pages.
