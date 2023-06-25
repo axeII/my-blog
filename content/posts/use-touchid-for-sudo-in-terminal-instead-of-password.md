@@ -12,13 +12,16 @@ When I have to enter a password in front of someone the feeling that they can se
 
 ## Standart macOS terminal app
 
-Here is a simple two-line shell script that sets Touch ID as a default option for authorization in the terminal when entering `sudo`:
+Here is a simple script that sets Touch ID as a default option for authorization in the terminal when entering `sudo`:
 
 ```shell
 #!/bin/bash
 
 chmod +w /private/etc/pam.d/sudo
 sed -i '' -e ' 1 s/.*/&\nauth\tsufficient\tpam_tid.so/' /private/etc/pam.d/sudo
+# or simply insert this as first line:
+# auth       sufficient     pam_tid.so
+
 # in case of security set pam.d readonly
 chmod -w /private/etc/pam.d/sudo
 ```
@@ -37,7 +40,7 @@ brew install fabianishere/personal/pam_reattach
 
 ```bash
 # sudo: auth account password sessios
-auth     optional    /opt/homebrew/lib/pam/pam_reattach.so
+auth       optional       /opt/homebrew/lib/pam/pam_reattach.so
 auth       sufficient     pam_tid.so
 auth       sufficient     pam_smartcard.so
 auth       required       pam_opendirectory.so
