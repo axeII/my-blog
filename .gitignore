@@ -13,3 +13,6 @@ hugo.linux
 /.hugo_build.lock
 .DS_store
 .vscode
+
+# test images
+ignore.*
