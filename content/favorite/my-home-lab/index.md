@@ -10,14 +10,14 @@ series_order: 1
 title: "My home lab: Upgrade"
 ---
 
+Building and maintaining home lab is my hobby. Creating one allows you to experiment with hardware, software, and networking, while empower self-hosting which opens you whole new world with infinitive possibilities. And when you create one you with many services, you can also share them with friends. Hosting services like plex for watching movies or hosting a minecraft server. By self hosting stuff, you can gain great expericence, freedom, friends but also responsibility. A great way to start your career!
 
-I enjoy working with server hardware and networking stuff, working with them, breaking and fixing them. It's my hobby. Probably the biggest inspiration doing this stuff comes `r/homelab`, `r/sysadmin/`, `r/selfhosted` which is my usual source. By self hosting stuff, you can gain great expericence and freedombut also responsibility. You break something you must fix it or users will not be happy (family). You can manage photos for whole family, manage network, DNS, manage backed up data or even better you can manage personal plex server which you can share with friends!
 
-For me biggest advantage by doing this  stuff and no going with cloud way for home stuff  is that you can learn about whole processing managing personal "clouod". From hardware, network, to applications every tool is under your control. And it's up to you how wild you can go. So here is my post about my setup. I share this to help community the same way that community helped me - by documenting stuff and be inspiring and sharing it with others.
+## Where do we start?
+If you are planning to build your own home lab you can find (as I did) lot of info in reddit's communities like `r/homelab`, `r/sysadmin`, and `r/selfhosted` serve as valuable resources, providing knowledge, inspiration. There are also many discord servers like `k8sathome`, `sysadmin`, `ubuiqity` and many more which contain supportive network of fellow enthusiasts.
 
-_Anyway_
 
-There are some closed source technologies in my setup - both software and hardware, but overall most of the stuff is FOSS. Tools like proxmox, ubuntu, btrfs, etc. I think that the biggest advantage using them is the community. Blogs, discord channels, reddit posts and many more can be great source of knowlage when trying to understand how to use them. I always like to choose technology where can I find active users who communicate and share knowledge but also help each other. Funny is that even unifi biggest and most helpful support I found is the unofficial channel (you guys rock).
+Now about my setup. There are some closed sourced technologies both SW and HW, but overall most of the stuff is FOSS. Tools like proxmox, ubuntu, btrfs, etc. I think that the biggest advantage using them is the community. Blogs, discord channels, reddit posts and many more can be great source of knowlage when trying to understand how to use them. I always like to choose technology where can I find active users who communicate and share knowledge but also help each other. Funny is that even unifi biggest and most helpful support I found (again) is the unofficial channel.
 
 But enough of that and let's get to my homelab. While working on my home setup the biggest challages were:
 
