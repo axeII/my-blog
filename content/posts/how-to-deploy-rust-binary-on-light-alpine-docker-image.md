@@ -12,7 +12,7 @@ When it comes to deploying Rust applications, using Docker containers has become
 If you would just use typical way to build rust binary with `cargo build --release` and then copy it to the Alpine image, you will get an error like this:
 
 ```bash
-sh: ./binary: not found
+sh: ./helloWorld: not found
 ```
 
 Simply binary would not be able to run since it's missing some dependencies that are not included in the Alpine image.
@@ -52,9 +52,9 @@ Once the binary is built, we can just copy the binary to the Alpine image and ru
 ```dockerfile
 FROM alpine:3.19
 
-COPY ./binary /usr/local/bin/binary
+COPY ./helloWorld /usr/local/bin/helloWorld
 
-CMD ["/usr/local/bin/binary"]
+CMD ["helloWorld"]
 ```
 
 It doesn't have to be exactly like this, you can add more stuff to the Dockerfile, but this is the basic idea. Just copy the binary to the image and run it or add this process directly to the dockerfile and you are good to go.
