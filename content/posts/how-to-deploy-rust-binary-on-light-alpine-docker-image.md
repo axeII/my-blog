@@ -32,9 +32,9 @@ apt-get install -y musl-tools
 
 `musl-tools` is a package that provides utilities for building and working with applications that use the musl libc (musl Library). Musl is an alternative standard library implementation for the C programming language.
 The musl-tools package typically includes:
-    • Compiler wrappers: These tools help in compiling code with musl instead of the default glibc.
-    • Static linking: Utilities to aid in statically linking binaries against musl, which helps in producing more portable and standalone binaries.
-    • Compatibility aids: Tools to ensure that software built with musl behaves correctly and maximizes compatibility.
+  * Compiler wrappers: These tools help in compiling code with musl instead of the default glibc.
+  * Static linking: Utilities to aid in statically linking binaries against musl, which helps in producing more portable and standalone binaries.
+  * Compatibility aids: Tools to ensure that software built with musl behaves correctly and maximizes compatibility.
 
 
 ## Step 2: Build the Rust Binary
