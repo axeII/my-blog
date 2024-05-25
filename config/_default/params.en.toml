@@ -1,44 +1,91 @@
 colorScheme = "blowfish"
+
 enableSearch = true
+enableCodeCopy = true
+
+logo = "img/logo_inverted.png"
+secondaryLogo = "img/logo.png"
+
 showRelatedContent = true
 relatedContentLimit = 3
-# defaultBackgroundImage = "img/background.webp"
-defaultBackgroundImage = "img/bg.webp"
-# logo = "img/logo.png"
+
+defaultBackgroundImage = "img/bg.svg"
 highlightCurrentMenuArea = true
-smartTOC = true
+autoSwitchAppearance = false
+defaultAppearance = "dark"
+
 mainSections = ['favorite']
+
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
+
 [header]
-# layout = "fixed"
-layout = "fixed-fill-blur"
+  layout = "fixed-fill-blur"
+
 [homepage]
-layout = "custom"
-# layout = "background"
-# homepageImage = "img/background.jpg"
-colorScheme = "avocado"
-showRecent = true
-showRecentItems = 6
-cardView = true
-showMoreLink = true
-# cardViewScreenWidth = true
+  layout = "custom"
+  colorScheme = "avocado"
+  showRecent = true
+  showRecentItems = 6
+  cardView = true
+  showMoreLink = true
+  showMoreLinkDest = '/posts'
+  # cardViewScreenWidth = true
+
 [article]
-showHero = true
-heroStyle = "big" # this on is nice but play with it
-# heroStyle = "thumbAndBackground"
-showBreadcrumbs = true
-showTableOfContents = true
-showRelatedContent = true
-relatedContentLimit = 3
-showComments = true
-showTaxonomies = true
+  showHero = true
+  showAuthor = true
+  heroStyle = "basic"
+  showBreadcrumbs = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+  showPagination = true
+  showAuthorsBadges = true
+  showSummary = true
+  showReadingTime = true
+  showComments = true
+  showTaxonomies = true
+  showEdit = true
+  editURL = "https://github.com/axeii/my-blog/tree/main/content"
+  editAppendPath = true
+
 [list]
-# showSummary = true
-showBreadcrumbs = true
-showHero = true
-heroStyle = "background"
-showTableOfContents = true
-# cardViewScreenWidth = true
-# showCards = true
-groupByYear = true
+  showHero = true
+  heroStyle = "background"
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = false
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showSummary = false
+  showTableOfContents = false
+  showCards = true
+  # groupByYear = false
+  groupByYear = true
+  cardView = true
+  cardViewScreenWidth = false
+
+[taxonomy]
+  showTermCount = true
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = true
+  showLikes = true
+  showTableOfContents = true
+
+[term]
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = true
+  showLikes = true
+  showTableOfContents = true
+  groupByYear = false
+  cardViewScreenWidth = false
+  cardView = false
+
 [footer]
-showAppearanceSwitcher = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true

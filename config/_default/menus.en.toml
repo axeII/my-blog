@@ -5,33 +5,32 @@
 #   weight = 10
 
 [[main]]
-  name = "Posts"
-  pageRef = "posts"
+  name = "/home"
+  pageRef = "/"
   weight = 10
 
 [[main]]
-  name = "Whoami"
-  pageRef = "about"
+  name = "/data"
+  pageRef = "posts"
   weight = 20
 
 [[main]]
-  name = "Tags"
-  pageRef = "tags"
+  name = "/whoami"
+  pageRef = "about"
   weight = 30
 
+# TODO: Add resume
 # [[main]]
-#   pre = "github"
-#   name = ""
-#   url = "https://github.com/axeII"
-#   weight = 30
-
-# [[main]]
-#   identifier = "mastodon"
-#   pre = "mastodon"
-#   url = "https://infosec.exchange/@axell"
+#   name = "Resume"
+#   pageRef = "resume"
 #   weight = 40
 
-# [[footer]]
-#   showAppearanceSwitcher = true
-#   # name = "Privacy"
-  # url = "https://external-link"
+[[footer]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 10
+
+[[footer]]
+  name = "Categories"
+  pageRef = "categories"
+  weight = 20

@@ -1,11 +1,16 @@
-title = "axell.dev"
+title = ""
 
 [author]
-name = "Ales Lerch"
-image = "img/author.jpg"
-headline = "DevOps engineer & Cyber Security ambassador. "
-bio = "Loves Italian cuisine, scuba diving and self-hosted stuff ✨."
+name = "Alesh Lerch"
+image = "img/author.png"
+
+
+
+# headline = "DevOps engineer & Cyber Security enthusiast. "
+headline = "DevOps engineer @ KM"
+bio = "Humble engineer who loves Italian cuisine and self-hosted stuff ✨."
 links = [
     { github = "https://github.com/axeII" },
-    { mastodon = "https://infosec.exchange/@axell" }
+    { mastodon = "https://infosec.exchange/@axell" },
+    { linkedin = "https://www.linkedin.com/in/yxhlbgwk" }
 ]
