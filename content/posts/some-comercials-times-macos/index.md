@@ -1,7 +1,7 @@
 ---
 date: 2019-08-03T17:26:48Z
 description: ""
-draft: false
+draft: true
 slug: "some-commercials-run-on-macos"
 tags: ["sys admin", "devops"]
 title: "Some commercial displays on Times Square run on macOS"

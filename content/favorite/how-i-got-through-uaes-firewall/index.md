@@ -5,8 +5,8 @@ description: ""
 draft: false
 # image: "__GHOST_URL__/content/images/2021/07/firewall.png"
 slug: "how-i-got-through-uaes-firewall"
-tags: ["cyber security"]
-title: "How to bypass UAE's firewall with an iPad (and AWS)"
+tags: ["cyber security", "VPN", "networking", "firewall"]
+title: "How I bypassed UAE's firewall with an iPad & AWS on vacation"
 ---
 
 

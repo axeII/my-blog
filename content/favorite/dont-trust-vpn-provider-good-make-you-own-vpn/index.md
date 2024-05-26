@@ -5,7 +5,7 @@ description: ""
 draft: false
 # image: "__GHOST_URL__/content/images/2021/07/security.webp"
 slug: "dont-trust-vpn-provider-good-make-you-own-vpn"
-tags: ["sys admin", "devops"]
+tags: ["sys admin", "devops", "tech", "DIY"]
 title: "You don't trust VPN providers? Setup your own VPN on cloud using Ansible."
 ---
 

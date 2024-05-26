@@ -4,7 +4,7 @@ date: 2021-07-02T23:46:00Z
 description: ""
 draft: false
 slug: "my-home-lab"
-tags: ["tech", "sys admin"]
+tags: ["tech", "sys admin","home ops"]
 series: ["home-lab"]
 series_order: 1
 title: "My home lab: Upgrade"
