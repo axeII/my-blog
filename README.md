@@ -1,8 +1,8 @@
-# my-blog
+# axell.dev
 <div align="center">
 
 
-### axell.dev
+### my-blog
 
 ![logo](./axell.png)
 
