@@ -2,7 +2,7 @@
 <div align="center">
 
 
-### my-blog
+### My blog
 
 ![logo](./axell.png)
 
