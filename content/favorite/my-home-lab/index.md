@@ -74,11 +74,11 @@ This way I can have a software-controlled raid (which is better than hardware co
 
 You need a network e.g. WIFI router to connect to the Internet for your server and for your home network. And that's it.
 
-![Work in progress](images/image03.jpg "Work in progress")
+![Work in progress](images/image03.webp "Work in progress")
 
 _However_, you can go fancy like me and go with UDMP (Unifi dream machine pro). It is a network tool that is a switch, router, security gateway, and cloud key in one machine. Cool right!
 
-![work done](images/image04.jpg "Finally work is done.")
+![work done](images/image04.webp "Finally work is done.")
 
 There are _soo_ many things you can do with this machine! For me using this machine was such a great boost. I can set up VLANs networks, I can control bandwidth for every AP, I can set up firewall rules, I can use DPI to control what network users are doing, I can block p2p, I can setup IPS to control security, I can set up honeypot in case someone does something funny.
 
