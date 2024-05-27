@@ -2,11 +2,13 @@
 date: 2023-09-02T23:46:00Z
 description: ""
 draft: true
-slug: "my-home-lab"
+slug: "my-home-lab-another-upgrade"
 tags: ["tech", "sys admin"]
 series: ["home-lab"]
 series_order: 3
-title: "My home lab: Third upgrade"
+title: "My home lab: Another upgrade"
+
+showHero: false
 ---
 
 

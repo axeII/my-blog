@@ -2,11 +2,13 @@
 date: 2022-02-02T23:46:00Z
 description: ""
 draft: false
-slug: "my-home-lab"
+slug: "my-home-lab-upgrade"
 tags: ["tech", "sys admin"]
 series: ["home-lab"]
 series_order: 2
-title: "My home lab: Second upgrade"
+title: "My home lab: Upgrade"
+
+showHero: false
 ---
 
 ## Leak
