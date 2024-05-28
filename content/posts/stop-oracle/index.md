@@ -1,7 +1,10 @@
 ---
 title: "Stop Oracle Cloud powering off your VM on free tier."
 date: 2023-04-28T00:09:53+02:00
+slag: "stop-oracle-cloud-powering-off-your-vm-on-free-tier"
 draft: false
+
+showHero: false
 ---
 
 Oracle Cloud Infrastructure (OCI) Free Tier is an excellent option for developers and small businesses to test and deploy applications on the cloud without incurring significant costs. However, the Free Tier has specific resource limits and usage restrictions that you should be aware of, especially when it comes to virtual machines (VMs).
@@ -10,7 +13,7 @@ Oracle Cloud Infrastructure (OCI) Free Tier is an excellent option for developer
 
 It all beginnings with an email that I had received from Oracle:
 
-{{< figure src="__GHOST_URL__/content/images/2023/04/image.png" >}}
+![oracle](images/oracle.png "Oracle notice")
 
 Oracle has implemented a feature that automatically shuts down any VM that is not using enough processing power or have been idle for a specific period. So if you are like me and host there VM, then yes Oracle can shut it down anytime they feel your VM is "idle". Here are the conditions for reclaiming your VM:
 
@@ -20,11 +23,16 @@ Oracle has implemented a feature that automatically shuts down any VM that is no
 
 If you machine produces less CPU power then specified, Oracle will reclaim your VM by powering it off. I haven't found any information that Oracle would also reclaim storage so yours (and mine) data should be safe for now.
 
-{{< figure src="__GHOST_URL__/content/images/2023/04/7jtacm.jpg" >}}
+![notice](images/meme.jpg "Oracle: This is my vm")
 
 ## 2) Solution?
 
-This sucks, but there is a simple hack to avoid unexpected shutdowns. One option is to deploy on your Oracle VM simple script. First you need to install `stress` utility like this:
+This sucks, so I started my research and I tried to find simple solution for this problem. I found this github [thread](http://web.archive.org/web/20230406142044/https://github.com/louislam/uptime-kuma/issues/2901) and I though why no to try it. The way the hack works is by generating random stress on the VM to keep it active. That means that the VM will always be active and Oracle might stop powering it off.
+
+So how to do this?
+
+### The script
+First you need to install `stress` utility like this:
 
 ```bash
 apt-get install stress
