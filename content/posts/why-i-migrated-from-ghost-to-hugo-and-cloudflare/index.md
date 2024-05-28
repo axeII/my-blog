@@ -5,7 +5,6 @@ author: Akira
 slag: why-i-migrated-from-ghost-to-hugo-and-cloudflare
 tags: [Ghost, Hugo, Cloudflare]
 
-showHero: false
 ---
 
 # Introduction
@@ -54,7 +53,7 @@ I think this might be for some people the breaking point to move to Hugo. But I 
 
 For my new hugo blog I went again for theme hunting. I found a theme that was close to what I wanted. I then customized it to match my blog's design and branding. One of the things I really do like about hugo is how much you can actually customize the theme. At least this was my case when I started using the blowfish. Blowfish is a hugo theme made by Nuno Coração. The theme can be found [here](https://github.com/nunocoracao/blowfish). It's free and it's open source.
 
-Adding this theme was super easy. I just followed the guide which was just to git clone this project to `themes` folder in my hugo project. I had to addid to the git submodule settings since I wated to make it easy to deploy using git. Then I just had to add the theme to my `config.toml` file.
+Adding this theme was super easy. I just followed the guide which was just to git clone this project to `themes` folder. Then setup the blowfish repo as git submodule since I wated to make it easy to deploy. Then I just had to add the theme to my `config.toml` file and I was done.
 
 ```toml
 baseURL = 'https://axell.dev/'
@@ -68,9 +67,9 @@ There is just so many other things and I think that Nuno did a great job about t
 
 ## Performance Optimization
 
-Now that I had my hugo blog ready with the desine I liked I needed a way to simply deployit or even better automate the deployment. As a DevOps engineer I like to automate things but also use practices like GitOps. The flow is simply to update your code you push things to github and wait for the pipeline to automatically deploy the changes. This is what I wanted to do with my blog.
+Now that I had my hugo blog ready with the desine I liked I needed a way to simply deploy it or even better automate the deployment. As a DevOps engineer I like to automate things but also use practices like GitOps. The flow is simply to update your code you push things to github and wait for the pipeline to automatically deploy the changes. This is what I wanted to do with my blog.
 
-There are many more option for this so if you are reading this this the way I did this but it's definately no the only way since hugo generates static html files you can deployit alsomost everywhere you want.
+There are many more option for this so if you are reading this this the way I did this but it's definately no the only way since hugo generates static html files you can deploy it almost everywhere you want:
 
 1. **GitHub Pages**
    - Free for public repositories and easy to integrate with GitHub.
