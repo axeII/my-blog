@@ -21,10 +21,10 @@ Now about my setup. There are some closed sourced technologies both SW and HW, b
 
 But enough of that and let's get to my homelab. While working on my home setup the biggest challages were:
 
-- small space, small rack (I cloud not purchase classic server with depth 60cm or more)
-- noise (room was pretty close to the bedroom)
-- again small space so heat issues
-- did I mention a small space?
+* small space, small rack (I cloud not purchase classic server with depth 60cm or more)
+* noise (room was pretty close to the bedroom)
+* again small space so heat issues
+* did I mention a small space?
 
 So to beat these challenges I had to make several choices. I could not afford a classic server because of depth of my rack so I decided to go with something like a single-board computer (like a raspberry pi) but more powerful like Intel NUC (AMD fans dont' worry and read more!) .
 
