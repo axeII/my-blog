@@ -3,6 +3,8 @@ title: How to Deploy a Rust Binary on a Light Alpine Docker Image
 draft: false
 date: 2024-05-24
 tags: [Rust, Docker, Alpine]
+
+showHero: false
 ---
 
 # Introduction

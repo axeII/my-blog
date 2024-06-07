@@ -1,13 +1,13 @@
-+++
-categories = ["Software devlopment", "devops", "sys admin"]
-date = 2021-02-18T23:21:02Z
-description = ""
-draft = false
-slug = "mounted-docker-volume-contains-symlinks"
-tags = ["Software devlopment", "devops", "sys admin"]
-title = "Mounted docker volume contains symlinks"
+---
+date: 2021-02-18T23:21:02Z
+description: ""
+draft: false
+slug: "mounted-docker-volume-contains-symlinks"
+tags: ["Software devlopment", "devops", "sys admin"]
+title: "Mounted docker volume contains symlinks"
 
-+++
+showHero: false
+---
 
 
 This is quick tip that happened to me this afternoon. If you mount volume on docker (which is always brings some complications) than you may need to check mounted volume for symlinks.
