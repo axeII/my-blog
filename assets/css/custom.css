@@ -131,3 +131,10 @@
 td {
   vertical-align: middle !important;
 }
+
+/* Target Firefox browser only */
+@-moz-document url-prefix() {
+  .no-firefox-bg {
+    display: none;
+  }
+}
