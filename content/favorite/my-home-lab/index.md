@@ -7,7 +7,7 @@ slug: "my-home-lab"
 tags: ["tech", "sys admin","home ops"]
 series: ["home-lab"]
 series_order: 1
-title: "My home lab"
+title: "Building my home lab"
 ---
 
 Building and maintaining home lab is my hobby. Creating one allows you to experiment with hardware, software, and networking, while empower self-hosting which opens you whole new world with infinitive possibilities. And when you create one you with many services, you can also share them with friends. Hosting services like plex for watching movies or hosting a minecraft server. By self hosting stuff, you can gain great expericence, freedom, friends but also responsibility. A great way to start your career!
